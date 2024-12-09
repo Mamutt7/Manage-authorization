@@ -43,10 +43,13 @@ drwx--x--- 2 researcher2 research_team 4096 Oct 14 18:40 drafts
 -rw-rw-r-- 1 researcher2 research_team   46 Oct 14 18:40 project_t.txt
 ```
 
-The 1st character indicates the file type. The d indicates it’s a directory. When this character is a hyphen (-), it's a regular file.
-The 2nd-4th characters indicate the read (r), write (w), and execute (x) permissions for the user. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted to the user.
-The 5th-7th characters indicate the read (r), write (w), and execute (x) permissions for the group. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted for the group.
-The 8th-10th characters indicate the read (r), write (w), and execute (x) permissions for the owner type of other. This owner type consists of all other users on the system apart from the user and the group. When one of these characters is a hyphen (-) instead, that indicates that this permission is not granted for other.
+-The 1st character indicates the file type. The d indicates it’s a directory. When this character is a hyphen (-), it's a regular file.
+
+-The 2nd-4th characters indicate the read (r), write (w), and execute (x) permissions for the user. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted to the user.
+
+-The 5th-7th characters indicate the read (r), write (w), and execute (x) permissions for the group. When one of these characters is a hyphen (-) instead, it indicates that this permission is not granted for the group.
+
+-The 8th-10th characters indicate the read (r), write (w), and execute (x) permissions for the owner type of other. This owner type consists of all other users on the system apart from the user and the group. When one of these characters is a hyphen (-) instead, that indicates that this permission is not granted for other.
 
 The second block of text in the expanded directory listing is the user who owns the file. The third block of text is the group owner of the file.
 ![image](https://github.com/user-attachments/assets/2a33d9e6-6d54-4c1c-8dc0-ecf50940eed4)
