@@ -49,12 +49,15 @@ The 5th-7th characters indicate the read (r), write (w), and execute (x) permiss
 The 8th-10th characters indicate the read (r), write (w), and execute (x) permissions for the owner type of other. This owner type consists of all other users on the system apart from the user and the group. When one of these characters is a hyphen (-) instead, that indicates that this permission is not granted for other.
 
 The second block of text in the expanded directory listing is the user who owns the file. The third block of text is the group owner of the file.
+![image](https://github.com/user-attachments/assets/2a33d9e6-6d54-4c1c-8dc0-ecf50940eed4)
 
 Check whether any hidden files exist in the projects directory.
 The command to complete this step:
 ```bash
 ls -la
 ```
+![image](https://github.com/user-attachments/assets/975ba678-226b-46a1-bdf6-763b5b097a05)
+
 Task 2. Change file permissions
 In this task, you must determine whether any files have incorrect permissions and then change the permissions as needed. This action will remove unauthorized access and strengthen security on the system.
 
@@ -70,6 +73,8 @@ ls -l
 ```bash
 chmod o-w project_k.txt
 ```
+![image](https://github.com/user-attachments/assets/7c438cd8-d5e1-4a12-bb97-71d475115b69)
+
 3. The file project_m.txt is a restricted file and should not be readable or writable by the group or other; only the user should have these permissions on this file. List the contents and permissions of the current directory and check if the group has read or write permissions.
 The command to complete this step:
 ```bash
@@ -80,6 +85,8 @@ The command to complete this step:
 ```bash
 chmod g-r project_m.txt
 ```
+![image](https://github.com/user-attachments/assets/56822eb4-86ae-4438-9cfd-ebdb412fe66b)
+
 Task 3. Change file permissions on a hidden file
 In this task, you must determine if a hidden file has incorrect permissions and then change the permissions as needed. This action will further remove unauthorized access and strengthen security on the system.
 
@@ -95,6 +102,8 @@ The command to complete this step:
 ```bash
 chmod u-w,g-w,g+r .project_x.txt
 ```
+![image](https://github.com/user-attachments/assets/49ca80a4-3ca6-4918-874a-052ee672ecca)
+
 Task 4. Change directory permissions
 In this task, you must change the permissions of a directory. First, you’ll check the group permissions of the /home/researcher2/projects/drafts directory and then modify the permissions as required. (You should be in the projects directory while managing the permissions of its subdirectory drafts.)
 
@@ -110,6 +119,9 @@ The command to complete this step:
 ```bash
 chmod g-x drafts
 ```
+
+![image](https://github.com/user-attachments/assets/8393ee1c-2238-4542-a7e5-942d7999b3d5)
+
 Conclusion
 
 You now have practical experience in using basic Linux Bash shell commands to
